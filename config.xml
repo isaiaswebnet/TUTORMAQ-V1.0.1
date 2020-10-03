@@ -1,1 +1,39 @@
-
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="br.com.skynetsites.tutormaq" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>TutorMaq</name>
+    <description>Neste aplicativo você vai encontrar os tutoriais em vídeos de como operar as máquinas Norimaq e os manuais em PDF.</description>
+    <author email="suporte@skynetsites.com.br" href="https://www.skynetsites.com.br">Skynet Sites</author>
+    <content src="index.html" />
+    <preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name="AppName" value="TutorMaq" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="EnableViewPortScale" value="true" />
+    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.1" />
+    <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.3.0" />
+    <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.1" />
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.2" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="android-minSdkVersion" value="19" />
+        <preference name="android-targetSdkVersion" value="29" />
+        <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
+        <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
+        <icon density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />
+        <icon density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
+        <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
+        <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
+        <splash density="port-ldpi" src="www/res/screen/android/drawable-port-ldpi-screen.png" />
+        <splash density="port-mdpi" src="www/res/screen/android/drawable-port-mdpi-screen.png" />
+        <splash density="port-hdpi" src="www/res/screen/android/drawable-port-hdpi-screen.png" />
+        <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
+        <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
+        <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
+    </platform>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+</widget>
